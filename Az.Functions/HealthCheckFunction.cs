@@ -14,15 +14,15 @@ namespace Az.Functions
             _logger = loggerFactory.CreateLogger<HealthCheckFunction>();
         }
 
-        [Function("HealthCheckFunction")]
-        public HttpResponseData Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post")] HttpRequestData req)
+        [Function("HealthCheck")]
+        public HttpResponseData Run([HttpTrigger(AuthorizationLevel.Anonymous, "get")] HttpRequestData req)
         {
-            _logger.LogInformation("C# HTTP trigger function processed a request.");
+            _logger.LogInformation("Health check endpoint was called.");
 
             var response = req.CreateResponse(HttpStatusCode.OK);
-            response.Headers.Add("Content-Type", "text/plain; charset=utf-8");
+            response.Headers.Add("Content-Type", "application/json; charset=utf-8");
 
-            response.WriteString("Welcome to Azure Functions!");
+            response.WriteString("{\"status\":\"Healthy\"}");
 
             return response;
         }
