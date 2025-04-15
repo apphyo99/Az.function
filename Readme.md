@@ -37,6 +37,38 @@ Before you begin, ensure you have the following installed:
     func azure functionapp publish <function-app-name>
     ```
 
+    ## Build and Run with Docker
+
+    You can also containerize and run the Azure Function App using Docker. Follow these steps:
+
+    1. **Build the Docker Image**
+        Build a container image for your function app:
+        ```bash
+        docker build -t myfunctionapp .
+        ```
+
+    2. **Run the Docker Container**
+        Run the container locally:
+        ```bash
+        docker run -p 8080:80 myfunctionapp
+        ```
+
+    3. **Push to Azure Container Registry**
+        Log in to your Azure Container Registry (ACR):
+        ```bash
+        az acr login --name repository
+        ```
+
+        Tag the Docker image for ACR:
+        ```bash
+        docker tag myfunctionapp repository-url/myfunctionapp-image:v1
+        ```
+
+        Push the image to ACR:
+        ```bash
+        docker push cgrepodev.azurecr.io/myfunctionapp-image:v1
+        ```
+
 ## Additional Resources
 
 - [Azure Functions Documentation](https://learn.microsoft.com/en-us/azure/azure-functions/)
