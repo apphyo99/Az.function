@@ -23,7 +23,7 @@ var builder = new HostBuilder()
         {
             var configuration = ServiceProvider.GetRequiredService<IConfiguration>();
             var options = ServiceProvider.GetRequiredService<IOptions<Configuration>>();
-            return new CosmosService(new CosmosClient("AccountEndpoint=https://azstudycosmos.documents.azure.com:443/;AccountKey=QfiaCFsAuanBS3XWi7NJ9W8QU8WIbQDvd3XfnAKtQmHkJg2E9JI6sy5qm4Yjmz7hiuo8gfXeRa2DACDbsy3SRg==;"), options);
+            return new CosmosService(new CosmosClient(options.Value.AzureCosmosDB.ConnectionString), options);
         });
     });
 
