@@ -5,6 +5,10 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Az_Functions", "Az.Functions\Az_Functions.csproj", "{70D4EBB3-2316-40D3-A169-B3054B314CFC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Az.Models", "Az.Models\Az.Models.csproj", "{D934DBB9-AC8A-4DD2-9F71-AB9B93676C56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Az.Services", "Az.Services\Az.Services.csproj", "{964E39A8-D593-443D-9F5E-8298CD1383C5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{70D4EBB3-2316-40D3-A169-B3054B314CFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70D4EBB3-2316-40D3-A169-B3054B314CFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70D4EBB3-2316-40D3-A169-B3054B314CFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D934DBB9-AC8A-4DD2-9F71-AB9B93676C56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D934DBB9-AC8A-4DD2-9F71-AB9B93676C56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D934DBB9-AC8A-4DD2-9F71-AB9B93676C56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D934DBB9-AC8A-4DD2-9F71-AB9B93676C56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{964E39A8-D593-443D-9F5E-8298CD1383C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{964E39A8-D593-443D-9F5E-8298CD1383C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{964E39A8-D593-443D-9F5E-8298CD1383C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{964E39A8-D593-443D-9F5E-8298CD1383C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

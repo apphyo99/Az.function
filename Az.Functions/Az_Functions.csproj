@@ -10,6 +10,7 @@
     <PackageReference Include="Microsoft.Azure.Functions.Worker" Version="1.19.0" />
     <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Http" Version="3.0.13" />
     <PackageReference Include="Microsoft.Azure.Functions.Worker.Sdk" Version="1.14.0" />
+    <PackageReference Include="Microsoft.Extensions.Options.DataAnnotations" Version="9.0.4" />
   </ItemGroup>
   <ItemGroup>
     <None Update="host.json">
@@ -22,5 +23,9 @@
   </ItemGroup>
   <ItemGroup>
     <Using Include="System.Threading.ExecutionContext" Alias="ExecutionContext" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Az.Models\Az.Models.csproj" />
+    <ProjectReference Include="..\Az.Services\Az.Services.csproj" />
   </ItemGroup>
 </Project>

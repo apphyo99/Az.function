@@ -1,0 +1,33 @@
+# Ignore node_modules folder
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore environment files
+.env
+.env.local
+
+# Ignore build output
+dist/
+build/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE specific files
+.vscode/
+.idea/
+*.iml
+
+#bin/ and obj/ folders for C# projects
+bin/
+obj/
+
+#__azure__ folder for Azure projects
+azure__
+__azure__
+__azurite__
+__azurite_db__
+__blobstorage__

@@ -56,7 +56,7 @@ Before you begin, ensure you have the following installed:
     3. **Push to Azure Container Registry**
         Log in to your Azure Container Registry (ACR):
         ```bash
-        az acr login --name repository
+        az acr login --name repository-name
         ```
 
         Tag the Docker image for ACR:
@@ -66,7 +66,7 @@ Before you begin, ensure you have the following installed:
 
         Push the image to ACR:
         ```bash
-        docker push cgrepodev.azurecr.io/myfunctionapp-image:v1
+        docker push repository-url/myfunctionapp-image:v1
         ```
 
 ## Additional Resources
